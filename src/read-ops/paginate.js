@@ -1,5 +1,6 @@
 const async = require("async");
-const _ = require("underscore");
+const isEmpty = require("lodash/isEmpty");
+const union = require("lodash/union");
 const { config, DynamoDB } = require("aws-sdk");
 
 config.update({ region: "eu-west-1" });
@@ -16,7 +17,7 @@ async.doWhilst(
       Limit: 3,
     };
 
-    if (!_.isEmpty(startKey)) {
+    if (!isEmpty(startKey)) {
       params.ExclusiveStartKey = startKey;
     }
 
@@ -30,8 +31,8 @@ async.doWhilst(
             ? data.LastEvaluatedKey
             : [];
 
-        if (!_.isEmpty(data.Items)) {
-          results = _.union(results, data.Items);
+        if (!isEmpty(data.Items)) {
+          results = union(results, data.Items);
         }
 
         pages += 1;
@@ -39,7 +40,7 @@ async.doWhilst(
       }
     });
   },
-  () => (_.isEmpty(startKey) ? false : true),
+  () => (isEmpty(startKey) ? false : true),
   (err, data) => {
     if (err) {
       console.log(err);

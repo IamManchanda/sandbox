@@ -25,6 +25,7 @@
   "dependencies": {
     "async": "^2.6.2",
     "aws-sdk": "^2.735.0",
+    "lodash": "^4.17.20",
     "underscore": "^1.10.2"
   }
 }
