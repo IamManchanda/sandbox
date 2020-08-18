@@ -9,7 +9,8 @@
     "ops:table:create": "node src/table-ops/create",
     "ops:table:delete": "node src/table-ops/delete",
     "ops:write:put": "node src/write-ops/put",
-    "ops:write:update": "node src/write-ops/update"
+    "ops:write:update": "node src/write-ops/update",
+    "ops:write:delete": "node src/write-ops/delete"
   },
   "author": "",
   "license": "ISC",
