@@ -3,7 +3,10 @@ const isEmpty = require("lodash/isEmpty");
 const union = require("lodash/union");
 const { config, DynamoDB } = require("aws-sdk");
 
-config.update({ region: "eu-west-1" });
+config.update({
+  region: "eu-west-1",
+});
+
 const documentClient = new DynamoDB.DocumentClient();
 
 let startKey = [],
@@ -16,11 +19,9 @@ async.doWhilst(
       TableName: "td_notes_test",
       Limit: 3,
     };
-
     if (!isEmpty(startKey)) {
       params.ExclusiveStartKey = startKey;
     }
-
     documentClient.scan(params, (err, data) => {
       if (err) {
         console.log(err);
@@ -30,11 +31,9 @@ async.doWhilst(
           typeof data.LastEvaluatedKey !== "undefined"
             ? data.LastEvaluatedKey
             : [];
-
         if (!isEmpty(data.Items)) {
           results = union(results, data.Items);
         }
-
         pages += 1;
         callback(null, results);
       }
