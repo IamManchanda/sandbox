@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ops:list-tables": "node src/table-ops/list-tables",
-    "ops:describe-table": "node src/table-ops/describe-table"
+    "ops:describe-table": "node src/table-ops/describe-table",
+    "ops:create-table": "node src/table-ops/create-table"
   },
   "author": "",
   "license": "ISC",
