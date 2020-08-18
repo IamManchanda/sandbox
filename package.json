@@ -17,11 +17,14 @@
     "ops:write:get": "node src/read-ops/get",
     "ops:write:batch-get": "node src/read-ops/batch-get",
     "ops:write:query": "node src/read-ops/query",
-    "ops:write:scan": "node src/read-ops/scan"
+    "ops:write:scan": "node src/read-ops/scan",
+    "ops:write:paginate": "node src/read-ops/paginate"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.735.0"
+    "async": "^2.6.2",
+    "aws-sdk": "^2.735.0",
+    "underscore": "^1.10.2"
   }
 }
