@@ -13,7 +13,8 @@
     "ops:write:update": "node src/write-ops/update",
     "ops:write:delete": "node src/write-ops/delete",
     "ops:write:batch-write": "node src/write-ops/batch-write",
-    "ops:atomic:update-counter": "node src/atomic-ops/update-counter"
+    "ops:atomic:update-counter": "node src/atomic-ops/update-counter",
+    "ops:write:get": "node src/read-ops/get"
   },
   "author": "",
   "license": "ISC",
