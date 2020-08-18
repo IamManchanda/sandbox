@@ -15,6 +15,7 @@
     "ops:write:batch-write": "node src/write-ops/batch-write",
     "ops:atomic:update-counter": "node src/atomic-ops/update-counter",
     "ops:write:get": "node src/read-ops/get",
+    "ops:write:batch-get": "node src/read-ops/batch-get",
     "ops:write:query": "node src/read-ops/query",
     "ops:write:scan": "node src/read-ops/scan"
   },
