@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ops:list-tables": "node src/table-ops/list-tables.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
