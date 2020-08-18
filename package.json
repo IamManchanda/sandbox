@@ -6,7 +6,8 @@
   "scripts": {
     "ops:list-tables": "node src/table-ops/list-tables",
     "ops:describe-table": "node src/table-ops/describe-table",
-    "ops:create-table": "node src/table-ops/create-table"
+    "ops:create-table": "node src/table-ops/create-table",
+    "ops:delete-table": "node src/table-ops/delete-table"
   },
   "author": "",
   "license": "ISC",
