@@ -14,18 +14,17 @@
     "ops:write:delete": "node src/write-ops/delete",
     "ops:write:batch-write": "node src/write-ops/batch-write",
     "ops:atomic:update-counter": "node src/atomic-ops/update-counter",
-    "ops:write:get": "node src/read-ops/get",
-    "ops:write:batch-get": "node src/read-ops/batch-get",
-    "ops:write:query": "node src/read-ops/query",
-    "ops:write:scan": "node src/read-ops/scan",
-    "ops:write:paginate": "node src/read-ops/paginate"
+    "ops:read:get": "node src/read-ops/get",
+    "ops:read:batch-get": "node src/read-ops/batch-get",
+    "ops:read:query": "node src/read-ops/query",
+    "ops:read:scan": "node src/read-ops/scan",
+    "ops:read:paginate": "node src/read-ops/paginate"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^2.6.2",
     "aws-sdk": "^2.735.0",
-    "lodash": "^4.17.20",
-    "underscore": "^1.10.2"
+    "lodash": "^4.17.20"
   }
 }
