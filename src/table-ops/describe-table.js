@@ -5,7 +5,7 @@ const dynamodb = new DynamoDB();
 
 dynamodb.describeTable(
   {
-    TableName: "td_notes",
+    TableName: "td_notes_sdk",
   },
   (err, data) => {
     if (err) {
