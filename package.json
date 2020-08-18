@@ -7,7 +7,8 @@
     "ops:table:list": "node src/table-ops/list",
     "ops:table:describe": "node src/table-ops/describe",
     "ops:table:create": "node src/table-ops/create",
-    "ops:table:delete": "node src/table-ops/delete"
+    "ops:table:delete": "node src/table-ops/delete",
+    "ops:write:put": "node src/write-ops/put"
   },
   "author": "",
   "license": "ISC",
