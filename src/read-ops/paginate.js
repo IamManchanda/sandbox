@@ -15,9 +15,11 @@ async.doWhilst(
       TableName: "td_notes_test",
       Limit: 3,
     };
+
     if (!_.isEmpty(startKey)) {
       params.ExclusiveStartKey = startKey;
     }
+
     documentClient.scan(params, (err, data) => {
       if (err) {
         console.log(err);
@@ -27,9 +29,11 @@ async.doWhilst(
           typeof data.LastEvaluatedKey !== "undefined"
             ? data.LastEvaluatedKey
             : [];
+
         if (!_.isEmpty(data.Items)) {
           results = _.union(results, data.Items);
         }
+
         pages += 1;
         callback(null, results);
       }
