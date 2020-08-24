@@ -18,7 +18,8 @@
     "ops:read:batch-get": "node src/read-ops/batch-get",
     "ops:read:query": "node src/read-ops/query",
     "ops:read:scan": "node src/read-ops/scan",
-    "ops:read:paginate": "node src/read-ops/paginate"
+    "ops:read:paginate": "node src/read-ops/paginate",
+    "ops:global:tables": "node src/global-ops/global-tables"
   },
   "author": "",
   "license": "ISC",
