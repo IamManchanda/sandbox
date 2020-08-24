@@ -19,13 +19,16 @@
     "ops:read:query": "node src/read-ops/query",
     "ops:read:scan": "node src/read-ops/scan",
     "ops:read:paginate": "node src/read-ops/paginate",
-    "ops:global:tables": "node src/global-ops/global-tables"
+    "ops:global:tables": "node src/global-ops/global-tables",
+    "ops:global:bulk-writes": "node src/global-ops/bulk-writes"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^2.6.2",
     "aws-sdk": "^2.735.0",
-    "lodash": "^4.17.20"
+    "faker": "^5.0.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0"
   }
 }
