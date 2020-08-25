@@ -22,7 +22,8 @@
     "ops:global:tables": "node src/global-ops/global-tables",
     "ops:global:bulk-writes": "node src/global-ops/bulk-writes",
     "ops:global:bulk-reads": "node src/global-ops/bulk-reads",
-    "ops:compression:data": "node src/compression-ops/data-compression"
+    "ops:compression:data": "node src/compression-ops/data-compression",
+    "ops:compression:large-items-s3": "node src/compression-ops/large-items-s3"
   },
   "author": "",
   "license": "ISC",
