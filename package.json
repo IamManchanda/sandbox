@@ -18,9 +18,11 @@
     "ops:read:batch-get": "node src/read-ops/batch-get",
     "ops:read:query": "node src/read-ops/query",
     "ops:read:scan": "node src/read-ops/scan",
+    "ops:read:scan-cloudtrail": "node src/read-ops/scan-cloudtrail",
     "ops:read:paginate": "node src/read-ops/paginate",
     "ops:global:tables": "node src/global-ops/global-tables",
     "ops:global:bulk-writes": "node src/global-ops/bulk-writes",
+    "ops:global:bulk-writes-cloudtrail": "node src/global-ops/bulk-writes-cloudtrail",
     "ops:global:bulk-reads": "node src/global-ops/bulk-reads",
     "ops:compression:data": "node src/compression-ops/data-compression",
     "ops:compression:large-items-s3": "node src/compression-ops/large-items-s3"
